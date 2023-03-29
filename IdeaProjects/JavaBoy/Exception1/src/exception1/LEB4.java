@@ -1,18 +1,18 @@
 package exception1;
 
-public class LEB3 {
+public class LEB4 {
     public static void main(String[] args) {
-
-        int[] list = new int[10];
         try
         {
             System.out.println("statement 1");
             System.out.println(1/0);
             System.out.println("statement 3");
         }
-        catch (ArithmeticException e)
-        {
+        catch (ArrayIndexOutOfBoundsException e) {
 
+        }
+        catch (ArithmeticException e){
+            throw new StringIndexOutOfBoundsException();
         }
         finally
         {
@@ -20,5 +20,5 @@ public class LEB3 {
         }
         System.out.println("statement 5");
     }
-}
 
+}
